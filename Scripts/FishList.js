@@ -1,15 +1,20 @@
 import { getFish } from './FishData.js';
+import { Fish } from './Fish.js';
 
 export const FishList = () => {
 
-    // Get a reference to the `<article class="content">` element
-    const contentElement = document.querySelector(".fishTank")
-    const fishes = getFish()
+    const contentElement = document.querySelector(".fishList");
+    const fishes = getFish();
 
-    // Add to the existing HTML in the content element
+    let fishHTML = "";
+
+    for (const fishItem of fishes) {
+        fishHTML += Fish(fishItem);
+    }
+
     contentElement.innerHTML += `
-        <section class="fishList">
-            All the fish go here!
-        </section>
-    `
+    ${fishHTML}
+    ` ;
+
+
 }
