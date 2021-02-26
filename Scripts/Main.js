@@ -12,6 +12,13 @@ for (const fish of allTheFish) {
 FishList();
 
 //Tips JS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-import { busyFunction } from './Tips/TipList.js'
+
+import { busyFunction } from './Tips/TipList.js';
 
 busyFunction();
+
+//Locations JS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+import { add2HTML } from './Location/LocationList.js';
+
+add2HTML();
