@@ -1,4 +1,4 @@
-import { getFish } from './FishData';
+import { getFish } from './FishData.js';
 
 export const FishList = () => {
 
