@@ -10,7 +10,6 @@ import { giveTips } from './TipData.js';
 import { obj2HTML } from './Tip.js'
 
 export const busyFunction = () => {
-    debugger
     const selectHTML = document.querySelector('.tip-section');
     const objArr = giveTips();
     let converted = "";

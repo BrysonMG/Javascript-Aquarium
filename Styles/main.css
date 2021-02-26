@@ -86,6 +86,31 @@ aside {
 	margin: 1em;
 }
 
+.locationCard img {
+	max-width: 200px;
+}
+
+.locationCard {
+	width: 45%;
+}
+
+.loc-info-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: lightcyan;
+}
+
+.fishLocations {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+.locationDetails {
+	margin-left: 10px;
+}
+
 footer {
 	background-color: darkcyan;
 	color: whitesmoke;
