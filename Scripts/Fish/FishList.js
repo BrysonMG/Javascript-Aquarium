@@ -1,10 +1,10 @@
-import { getFish } from './FishData.js';
+import { orderedFish } from './FishFilter.js';
 import { Fish } from './Fish.js';
 
 export const FishList = () => {
 
     const contentElement = document.querySelector(".fishList")
-    const fishes = getFish()
+    const fishes = orderedFish
     let fishHTML = "";
     for (const fishItem of fishes) {
         fishHTML += Fish(fishItem)
