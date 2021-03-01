@@ -13,10 +13,10 @@ const sortFish = (fishArr) => {
         if (eachFish.length % 3 === 0 && eachFish.length % 5 === 0) {
             holySoldiers.push(eachFish);
 
-        } else if (eachFish.length % 3 === 0 && eachFish.length % 5 !== 0) {
+        } else if (eachFish.length % 3 === 0) {
             holyFish.push(eachFish);
 
-        } else if (eachFish.length % 3 !== 0 && eachFish.length % 5 === 0) {
+        } else if (eachFish.length % 5 === 0) {
             soldierFish.push(eachFish);
 
         } else {
